@@ -4,7 +4,7 @@ from project519.tfidfStrategy import tfidf_model
 from project519.LDAStrategy import lda_model
 from project519.word2vecStrategy import w2v_model
 
-_LATEX_BLACK_LIST_FILE = "C:\\Users\\ibipul\\codes\\CSE519-2017-111578726\\project519\\latex_keywords.txt"
+_LATEX_BLACK_LIST_FILE = "C:\\Users\\Root\\project519\\latex_keywords.txt"
 class evaluation_bed:
     def __init__(self, doc_obj_list):
         """
