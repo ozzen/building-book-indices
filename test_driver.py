@@ -1,9 +1,9 @@
 from glob import glob
 from project519.docCls import doc_object
 from project519.evaluationBed import evaluation_bed
-_TEST_ROOT = 'C:\\Users\\ibipul\\codes\\datasets\\arxiv\\'
+_TEST_ROOT = 'C:\\Users\\Root\\datasets\\arxiv\\'
 _LATEX_DIRS = glob(_TEST_ROOT+"/*/")
-_FILE_LOCATION = 'C:\\Users\\ibipul\\codes\\datasets\\'
+_FILE_LOCATION = 'C:\\Users\\Root\\datasets\\'
 
 _LOWER = 0.1
 _UPPER = 0.95
