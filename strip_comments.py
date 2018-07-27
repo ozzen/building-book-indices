@@ -1,19 +1,5 @@
 import ply.lex, argparse, io
 
-# modified from https://gist.github.com/amerberg/a273ca1e579ab573b499
-
-#Usage
-# python stripcomments.py input.tex > output.tex
-# python stripcomments.py input.tex -e encoding > output.tex
-
-# Modification:
-# 1. Preserve "\n" at the end of line comment
-# 2. For \makeatletter \makeatother block, Preserve "%" 
-#    if it is actually a comment, and trim the line
-#    while preserve the "\n" at the end of the line. 
-#    That is because remove the % some time will result in
-#    compilation failure.
-
 def strip_comments(source):
     tokens = (
                 'PERCENT', 'BEGINCOMMENT', 'ENDCOMMENT',
