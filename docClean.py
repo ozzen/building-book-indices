@@ -98,7 +98,6 @@ class content_preprocessor:
         :return: doc_object with sanitized filestrings updated
         :rtype doc_object:
         """
-        # TODO: ibipul@cs.stonybrook.edu
 
         self.clear_comments()
         self.sanitize_whitespace()
